@@ -1,0 +1,13 @@
+IMPORTANTE
+
+1. Descomprime HospitalApp_Corregido.zip.
+2. En Android Studio selecciona File > Open.
+3. Selecciona directamente la carpeta HospitalApp_Corregido que contiene:
+   - settings.gradle
+   - build.gradle
+   - app/
+4. No abras solamente la carpeta app ni el ZIP.
+5. Espera a que termine Gradle Sync.
+6. Selecciona la configuración "app" y ejecuta en el emulador.
+
+Las clases Java permanecen iguales al proyecto original. Solo se modificaron recursos XML.

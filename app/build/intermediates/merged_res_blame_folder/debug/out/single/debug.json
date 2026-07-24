@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_bg_status_chip.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/bg_status_chip.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_arrow_forward.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_arrow_forward.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_medical_note.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_medical_note.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_lock.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/layout_activity_location.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/layout/activity_location.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_doctor.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_doctor.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_person.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_bg_spinner.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/bg_spinner.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_add_patient.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_add_patient.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/layout_activity_wifi.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/layout/activity_wifi.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/layout_activity_login.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/layout_activity_admin_bd.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/layout/activity_admin_bd.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_wifi.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_wifi.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/layout_fragment_consulta.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/layout/fragment_consulta.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/layout_activity_lista_pacientes.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/layout/activity_lista_pacientes.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_bg_soft_circle.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/bg_soft_circle.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/color_text_input_stroke.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/color/text_input_stroke.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_clock.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_clock.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_database.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_database.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/layout_item_paciente.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/layout/item_paciente.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_expand_more.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_expand_more.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_bg_header_gradient.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/bg_header_gradient.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/layout_activity_main_menu.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/layout/activity_main_menu.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_list.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_list.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_location.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_location.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/drawable_ic_health.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/drawable/ic_health.xml"
+    },
+    {
+        "merged": "com.example.hospitalapp-merged_res-34:/layout_activity_paciente_consulta.xml.flat",
+        "source": "com.example.hospitalapp-main-36:/layout/activity_paciente_consulta.xml"
+    }
+]
