@@ -1,14 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/colorBackground">
-    <View android:id="@+id/header" android:layout_width="0dp" android:layout_height="235dp" android:background="@drawable/bg_header_gradient" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" />
-    <ImageView android:id="@+id/locationIcon" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginTop="44dp" android:background="@drawable/bg_soft_circle" android:padding="16dp" android:src="@drawable/ic_location" android:contentDescription="Ubicación" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" />
-    <TextView android:id="@+id/locationTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Ubicación en tiempo real" android:textColor="@color/white" android:textSize="25sp" android:textStyle="bold" app:layout_constraintTop_toBottomOf="@id/locationIcon" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" />
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Coordenadas actuales del dispositivo" android:textColor="#D9F2F4" android:textSize="14sp" app:layout_constraintTop_toBottomOf="@id/locationTitle" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" />
-    <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="-18dp" app:cardCornerRadius="22dp" app:cardElevation="5dp" app:strokeColor="@color/colorOutline" app:strokeWidth="1dp" app:layout_constraintTop_toBottomOf="@id/header" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp">
-            <TextView android:id="@+id/tvLatitud" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorSurfaceVariant" android:padding="18dp" android:text="Latitud (X): -" android:textColor="@color/colorTextDark" android:textSize="17sp" android:textStyle="bold" />
-            <TextView android:id="@+id/tvLongitud" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@color/colorSurfaceVariant" android:padding="18dp" android:text="Longitud (Y): -" android:textColor="@color/colorTextDark" android:textSize="17sp" android:textStyle="bold" />
-            <TextView android:id="@+id/tvEstado" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:background="@drawable/bg_status_chip" android:text="Esperando permisos..." android:textColor="@color/colorPrimaryDark" android:textSize="13sp" android:textStyle="bold" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="235dp"
+        android:background="@drawable/bg_header_gradient"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/locationIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bg_soft_circle"
+        android:padding="16dp"
+        android:src="@drawable/ic_location"
+        android:contentDescription="Ubicación"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/locationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Ubicación en tiempo real"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/locationIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Coordenadas actuales del dispositivo"
+        android:textColor="#D9F2F4"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/locationTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardUbicacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-18dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="5dp"
+        app:strokeColor="@color/colorOutline"
+        app:strokeWidth="1dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:id="@+id/tvLatitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSurfaceVariant"
+                android:padding="18dp"
+                android:text="Latitud (X): -"
+                android:textColor="@color/colorTextDark"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvLongitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorSurfaceVariant"
+                android:padding="18dp"
+                android:text="Longitud (Y): -"
+                android:textColor="@color/colorTextDark"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_status_chip"
+                android:text="Esperando permisos..."
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
         </LinearLayout>
+
     </com.google.android.material.card.MaterialCardView>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/cardUbicacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,8 +34,13 @@ public class AdminBDActivity extends AppCompatActivity {
         tablaContenedor = findViewById(R.id.tablaContenedor);
 
         String[] tablas = dbHelper.obtenerNombresTablas();
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_dropdown_item, tablas);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                this,
+                R.layout.spinner_item,
+                tablas);
+
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
+
         spinnerTablas.setAdapter(adapter);
 
         spinnerTablas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

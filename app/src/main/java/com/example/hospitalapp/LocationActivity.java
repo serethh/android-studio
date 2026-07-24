@@ -12,26 +12,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationCallback;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationResult;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.Priority;
+import com.google.android.gms.location.*;
+import com.google.android.gms.maps.*;
+import com.google.android.gms.maps.model.*;
 
-/**
- * Activity 3: Ubicación en tiempo real. Usa FusedLocationProviderClient
- * con permisos dinámicos de ACCESS_FINE_LOCATION para mostrar
- * latitud (X) y longitud (Y) actualizadas continuamente.
- */
-public class LocationActivity extends AppCompatActivity {
+public class LocationActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private static final int REQUEST_LOCATION_PERMISSION = 200;
 
     private TextView tvLatitud, tvLongitud, tvEstado;
+
     private FusedLocationProviderClient fusedLocationClient;
     private LocationCallback locationCallback;
     private LocationRequest locationRequest;
+
+    private GoogleMap mMap;
+    private boolean mapaListo = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,58 +40,151 @@ public class LocationActivity extends AppCompatActivity {
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
-        locationRequest = new LocationRequest.Builder(Priority.PRIORITY_HIGH_ACCURACY, 3000)
+        locationRequest = new LocationRequest.Builder(
+                Priority.PRIORITY_HIGH_ACCURACY,
+                3000)
                 .setMinUpdateIntervalMillis(2000)
                 .build();
+
+        SupportMapFragment mapFragment =
+                (SupportMapFragment) getSupportFragmentManager()
+                        .findFragmentById(R.id.map);
+
+        if (mapFragment != null) {
+            mapFragment.getMapAsync(this);
+        }
 
         locationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(@NonNull LocationResult locationResult) {
+
                 Location ubicacion = locationResult.getLastLocation();
+
                 if (ubicacion != null) {
-                    tvLatitud.setText("Latitud (X): " + ubicacion.getLatitude());
-                    tvLongitud.setText("Longitud (Y): " + ubicacion.getLongitude());
-                    tvEstado.setText("Actualizando en tiempo real...");
+
+                    double lat = ubicacion.getLatitude();
+                    double lon = ubicacion.getLongitude();
+
+                    tvLatitud.setText("Latitud (X): " + lat);
+                    tvLongitud.setText("Longitud (Y): " + lon);
+                    tvEstado.setText("Ubicación obtenida correctamente");
+
+                    if (mapaListo) {
+
+                        LatLng posicion = new LatLng(lat, lon);
+
+                        mMap.clear();
+
+                        mMap.addMarker(new MarkerOptions()
+                                .position(posicion)
+                                .title("Mi ubicación"));
+
+                        mMap.animateCamera(
+                                CameraUpdateFactory.newLatLngZoom(posicion, 17));
+
+                    }
+
                 }
+
             }
         };
 
         verificarPermisos();
     }
 
+    @Override
+    public void onMapReady(@NonNull GoogleMap googleMap) {
+
+        mMap = googleMap;
+        mapaListo = true;
+
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION)
+                == PackageManager.PERMISSION_GRANTED) {
+
+            mMap.setMyLocationEnabled(true);
+
+        }
+
+    }
+
     private void verificarPermisos() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
+
+            ActivityCompat.requestPermissions(
+                    this,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                     REQUEST_LOCATION_PERMISSION);
+
         } else {
+
             iniciarActualizaciones();
+
         }
+
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    public void onRequestPermissionsResult(
+            int requestCode,
+            @NonNull String[] permissions,
+            @NonNull int[] grantResults) {
+
+        super.onRequestPermissionsResult(
+                requestCode,
+                permissions,
+                grantResults);
+
         if (requestCode == REQUEST_LOCATION_PERMISSION) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+            if (grantResults.length > 0 &&
+                    grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
                 iniciarActualizaciones();
+
+                if (mMap != null) {
+                    if (ActivityCompat.checkSelfPermission(this,
+                            Manifest.permission.ACCESS_FINE_LOCATION)
+                            == PackageManager.PERMISSION_GRANTED) {
+
+                        mMap.setMyLocationEnabled(true);
+
+                    }
+                }
+
             } else {
-                tvEstado.setText("Permiso de ubicación denegado");
+
+                tvEstado.setText("Permiso denegado");
+
             }
+
         }
+
     }
 
     private void iniciarActualizaciones() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
-            fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
+
+            fusedLocationClient.requestLocationUpdates(
+                    locationRequest,
+                    locationCallback,
+                    Looper.getMainLooper());
+
         }
+
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+
         fusedLocationClient.removeLocationUpdates(locationCallback);
+
     }
 }
