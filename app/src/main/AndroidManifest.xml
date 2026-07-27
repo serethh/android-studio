@@ -17,24 +17,40 @@
         android:theme="@style/Theme.HospitalApp">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCA7GPQ2ckSHxIUqIKirHozEffvxhfwF98"/>
+            android:value="AIzaSyCA7GPQ2ckSHxIUqIKirHozEffvxhfwF98" />
 
         <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainMenuActivity" android:exported="false" />
-        <activity android:name=".WifiActivity" android:exported="false" />
-        <activity android:name=".LocationActivity" android:exported="false" />
-        <activity android:name=".PacienteConsultaActivity" android:exported="false" />
-        <activity android:name=".ListaPacientesActivity" android:exported="false" />
-        <activity android:name=".AdminBDActivity" android:exported="false" />
-
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WifiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PacienteConsultaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaPacientesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminBDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroUsuarioActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
+
 
 </manifest>

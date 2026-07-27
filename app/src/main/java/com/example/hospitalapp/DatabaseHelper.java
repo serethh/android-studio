@@ -113,6 +113,29 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         c.close();
         return rol;
     }
+    public boolean existeUsuario(String usuario) {
+        SQLiteDatabase db = getReadableDatabase();
+
+        Cursor c = db.rawQuery(
+                "SELECT id FROM " + TABLE_USUARIOS + " WHERE usuario=?",
+                new String[]{usuario});
+
+        boolean existe = c.moveToFirst();
+        c.close();
+
+        return existe;
+    }
+
+    public long registrarUsuario(String usuario, String password) {
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues cv = new ContentValues();
+        cv.put("usuario", usuario);
+        cv.put("password", password);
+        cv.put("rol", "Recepcionista");
+
+        return db.insert(TABLE_USUARIOS, null, cv);
+    }
 
     // ---------------------- MEDICOS ----------------------
 

@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,12 +30,17 @@ public class LoginActivity extends AppCompatActivity {
         etUsuario = findViewById(R.id.etUsuario);
         etPassword = findViewById(R.id.etPassword);
         Button btnLogin = findViewById(R.id.btnLogin);
+        TextView tvCrearCuenta = findViewById(R.id.tvCrearCuenta);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intentarLogin();
             }
+        });
+        tvCrearCuenta.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, RegistroUsuarioActivity.class);
+            startActivity(intent);
         });
     }
 
