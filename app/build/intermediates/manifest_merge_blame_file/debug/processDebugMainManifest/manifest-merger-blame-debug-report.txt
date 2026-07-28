@@ -1,0 +1,254 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.hospitalapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="23"
+8-->INJECTED
+9        android:targetSdkVersion="34" />
+9-->INJECTED
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:5:5-76
+12-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:5:22-73
+13    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+13-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:6:5-76
+13-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:6:22-73
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:7:5-79
+14-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:7:22-76
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:8:5-79
+15-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:8:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:9:5-81
+16-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:9:22-78
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\10f72519a22b8388ae067fadd81fa877\transformed\jetified-play-services-maps-19.2.0\AndroidManifest.xml:22:5-24:33
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\10f72519a22b8388ae067fadd81fa877\transformed\jetified-play-services-maps-19.2.0\AndroidManifest.xml:23:8-40
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\10f72519a22b8388ae067fadd81fa877\transformed\jetified-play-services-maps-19.2.0\AndroidManifest.xml:24:8-31
+21
+22    <queries>
+22-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\10f72519a22b8388ae067fadd81fa877\transformed\jetified-play-services-maps-19.2.0\AndroidManifest.xml:27:5-30:15
+23
+24        <!-- Needs to be explicitly declared on Android R+ -->
+25        <package android:name="com.google.android.apps.maps" />
+25-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\10f72519a22b8388ae067fadd81fa877\transformed\jetified-play-services-maps-19.2.0\AndroidManifest.xml:29:7-61
+25-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\10f72519a22b8388ae067fadd81fa877\transformed\jetified-play-services-maps-19.2.0\AndroidManifest.xml:29:16-59
+26    </queries>
+27
+28    <permission
+28-->[androidx.core:core:1.18.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\a1f65db1724f0d9e1d82c1ec5cbe2f4a\transformed\core-1.18.0\AndroidManifest.xml:22:5-24:47
+29        android:name="com.example.hospitalapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.18.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\a1f65db1724f0d9e1d82c1ec5cbe2f4a\transformed\core-1.18.0\AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.18.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\a1f65db1724f0d9e1d82c1ec5cbe2f4a\transformed\core-1.18.0\AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.example.hospitalapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.18.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\a1f65db1724f0d9e1d82c1ec5cbe2f4a\transformed\core-1.18.0\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.18.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\a1f65db1724f0d9e1d82c1ec5cbe2f4a\transformed\core-1.18.0\AndroidManifest.xml:26:22-94
+33
+34    <application
+34-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:11:5-61:19
+35        android:allowBackup="true"
+35-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:12:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.18.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\a1f65db1724f0d9e1d82c1ec5cbe2f4a\transformed\core-1.18.0\AndroidManifest.xml:28:18-86
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+38-->INJECTED
+39        android:icon="@mipmap/ic_launcher"
+39-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:13:9-43
+40        android:label="@string/app_name"
+40-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:14:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:15:9-54
+42        android:supportsRtl="true"
+42-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:16:9-35
+43        android:theme="@style/Theme.HospitalApp" >
+43-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:17:9-49
+44        <meta-data
+44-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:18:9-20:71
+45            android:name="com.google.android.geo.API_KEY"
+45-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:19:13-58
+46            android:value="AIzaSyCA7GPQ2ckSHxIUqIKirHozEffvxhfwF98" />
+46-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:20:13-68
+47
+48        <activity
+48-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:22:9-30:20
+49            android:name="com.example.hospitalapp.LoginActivity"
+49-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:23:13-42
+50            android:exported="true" >
+50-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:24:13-36
+51            <intent-filter>
+51-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:25:13-29:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:26:17-69
+52-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:26:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:28:17-77
+54-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:28:27-74
+55            </intent-filter>
+56        </activity>
+57        <activity
+57-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:31:9-33:40
+58            android:name="com.example.hospitalapp.MainMenuActivity"
+58-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:32:13-45
+59            android:exported="false" />
+59-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:33:13-37
+60        <activity
+60-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:34:9-36:40
+61            android:name="com.example.hospitalapp.WifiActivity"
+61-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:35:13-41
+62            android:exported="false" />
+62-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:36:13-37
+63        <activity
+63-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:37:9-39:40
+64            android:name="com.example.hospitalapp.LocationActivity"
+64-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:38:13-45
+65            android:exported="false" />
+65-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:39:13-37
+66        <activity
+66-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:40:9-42:40
+67            android:name="com.example.hospitalapp.PacienteConsultaActivity"
+67-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:41:13-53
+68            android:exported="false" />
+68-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:42:13-37
+69        <activity
+69-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:43:9-45:40
+70            android:name="com.example.hospitalapp.ListaPacientesActivity"
+70-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:44:13-51
+71            android:exported="false" />
+71-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:45:13-37
+72        <activity
+72-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:46:9-48:40
+73            android:name="com.example.hospitalapp.AdminBDActivity"
+73-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:47:13-44
+74            android:exported="false" />
+74-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:48:13-37
+75        <activity
+75-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:49:9-52:58
+76            android:name="com.example.hospitalapp.RegistroUsuarioActivity"
+76-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:50:13-52
+77            android:exported="false"
+77-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:51:13-37
+78            android:windowSoftInputMode="adjustResize" />
+78-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:52:13-55
+79        <activity
+79-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:53:9-56:58
+80            android:name="com.example.hospitalapp.RegistrarSalidaActivity"
+80-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:54:13-52
+81            android:exported="false"
+81-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:55:13-37
+82            android:windowSoftInputMode="adjustResize" />
+82-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:56:13-55
+83        <activity
+83-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:57:9-60:58
+84            android:name="com.example.hospitalapp.RegistrarMedicoActivity"
+84-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:58:13-52
+85            android:exported="false"
+85-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:59:13-37
+86            android:windowSoftInputMode="adjustResize" />
+86-->C:\Users\jocej\Downloads\HospitalApp (1)\android-studio\app\src\main\AndroidManifest.xml:60:13-55
+87        <!-- Needs to be explicitly declared on P+ -->
+88        <uses-library
+88-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\10f72519a22b8388ae067fadd81fa877\transformed\jetified-play-services-maps-19.2.0\AndroidManifest.xml:33:7-86
+89            android:name="org.apache.http.legacy"
+89-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\10f72519a22b8388ae067fadd81fa877\transformed\jetified-play-services-maps-19.2.0\AndroidManifest.xml:33:21-58
+90            android:required="false" />
+90-->[com.google.android.gms:play-services-maps:19.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\10f72519a22b8388ae067fadd81fa877\transformed\jetified-play-services-maps-19.2.0\AndroidManifest.xml:33:59-83
+91
+92        <activity
+92-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\ada2ee984afdeeaeb5afa5371abd87be\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+93            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+93-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\ada2ee984afdeeaeb5afa5371abd87be\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+94            android:exported="false"
+94-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\ada2ee984afdeeaeb5afa5371abd87be\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+95-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\ada2ee984afdeeaeb5afa5371abd87be\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+96
+97        <meta-data
+97-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\447ba76d23f4873bb55fe366a461e751\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+98            android:name="com.google.android.gms.version"
+98-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\447ba76d23f4873bb55fe366a461e751\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+99            android:value="@integer/google_play_services_version" />
+99-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\447ba76d23f4873bb55fe366a461e751\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+100
+101        <provider
+101-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+102            android:name="androidx.startup.InitializationProvider"
+102-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+103            android:authorities="com.example.hospitalapp.androidx-startup"
+103-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+104            android:exported="false" >
+104-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+105            <meta-data
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+107                android:value="androidx.startup" />
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\1fbef3ce5f4911016ff260ae9861fa57\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+108            <meta-data
+108-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jocej\.gradle\caches\9.5.0\transforms\2363adf75d7ba1fde5cc5ef8c25ed9bd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+109                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+109-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jocej\.gradle\caches\9.5.0\transforms\2363adf75d7ba1fde5cc5ef8c25ed9bd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+110                android:value="androidx.startup" />
+110-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\jocej\.gradle\caches\9.5.0\transforms\2363adf75d7ba1fde5cc5ef8c25ed9bd\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+111            <meta-data
+111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+112                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+112-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+113                android:value="androidx.startup" />
+113-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+114        </provider>
+115
+116        <receiver
+116-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+117            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+117-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+118            android:directBootAware="false"
+118-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+119            android:enabled="true"
+119-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+120            android:exported="true"
+120-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+121            android:permission="android.permission.DUMP" >
+121-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+122            <intent-filter>
+122-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+123                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+123-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+123-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+124            </intent-filter>
+125            <intent-filter>
+125-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+126                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+126-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+126-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+127            </intent-filter>
+128            <intent-filter>
+128-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+129                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+129-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+129-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+130            </intent-filter>
+131            <intent-filter>
+131-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+132                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+132-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+132-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\jocej\.gradle\caches\9.5.0\transforms\9d02b700483709cc96eaaecf4770145a\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+133            </intent-filter>
+134        </receiver>
+135    </application>
+136
+137</manifest>

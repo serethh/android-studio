@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/colorBackground" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="220dp" android:orientation="vertical" android:gravity="bottom" android:padding="24dp" android:background="@drawable/bg_header_gradient">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Panel principal" android:textColor="@color/white" android:textSize="28sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvBienvenida" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="#D9F2F4" android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView style="@style/TextAppearance.HospitalApp.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Servicios rápidos" />
+        <TextView style="@style/TextAppearance.HospitalApp.Subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="14dp" android:text="Selecciona una función para continuar" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnWifi" style="@style/Widget.HospitalApp.Button.Outlined" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:gravity="start|center_vertical" android:text="Detalles de Wi‑Fi" app:icon="@drawable/ic_wifi" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnUbicacion" style="@style/Widget.HospitalApp.Button.Outlined" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:gravity="start|center_vertical" android:text="Ubicación en tiempo real" app:icon="@drawable/ic_location" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnPaciente" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:gravity="start|center_vertical" android:text="Registrar paciente y consulta" app:icon="@drawable/ic_add_patient" app:backgroundTint="@color/colorPrimary" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSalida"
+            style="@style/Widget.HospitalApp.Button.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="start|center_vertical"
+            android:text="Registrar salida del paciente"
+            app:icon="@drawable/ic_clock" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnLista" style="@style/Widget.HospitalApp.Button.Outlined" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:gravity="start|center_vertical" android:text="Historial de pacientes" app:icon="@drawable/ic_list" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnAdmin" style="@style/Widget.HospitalApp.Button.Outlined" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="start|center_vertical" android:text="Administrador de base de datos" app:icon="@drawable/ic_database" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMedico"
+            style="@style/Widget.HospitalApp.Button.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="start|center_vertical"
+            android:text="Registrar médico"
+            app:icon="@drawable/ic_doctor"/>
+    </LinearLayout>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

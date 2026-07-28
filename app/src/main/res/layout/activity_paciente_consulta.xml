@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/colorBackground" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="195dp" android:gravity="bottom" android:orientation="vertical" android:padding="24dp" android:background="@drawable/bg_header_gradient">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nuevo paciente" android:textColor="@color/white" android:textSize="27sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Registra sus datos clínicos iniciales" android:textColor="#D9F2F4" android:textSize="14sp" />
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" app:cardCornerRadius="22dp" app:cardElevation="3dp" app:strokeColor="@color/colorOutline" app:strokeWidth="1dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView style="@style/TextAppearance.HospitalApp.Title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Información personal" />
+            <TextView style="@style/TextAppearance.HospitalApp.Subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="18dp" android:text="Completa los campos requeridos" />
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nombre completo" app:startIconDrawable="@drawable/ic_person">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPersonName"  android:textColor="@color/colorTextDark"
+                    android:textColorHint="@color/colorTextLight"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:hint="Edad">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etEdad" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"  android:textColor="@color/colorTextDark"
+                    android:textColorHint="@color/colorTextLight"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:hint="Diagnóstico inicial" app:startIconDrawable="@drawable/ic_medical_note">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etDiagnostico" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="top" android:minLines="3" android:inputType="textMultiLine"  android:textColor="@color/colorTextDark"
+                    android:textColorHint="@color/colorTextLight"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnGuardarPaciente" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Guardar paciente" app:icon="@drawable/ic_add_patient" app:backgroundTint="@color/colorPrimary" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginBottom="24dp" />
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

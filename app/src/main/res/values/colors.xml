@@ -1,0 +1,20 @@
+<resources>
+    <color name="colorPrimary">#0B5D6B</color>
+    <color name="colorPrimaryDark">#073E48</color>
+    <color name="colorPrimaryContainer">#D9F2F4</color>
+    <color name="colorAccent">#16A085</color>
+    <color name="colorAccentDark">#0E7563</color>
+    <color name="colorSecondary">#4E6E81</color>
+    <color name="colorBackground">#F4F8FA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorSurfaceVariant">#EAF1F4</color>
+    <color name="colorTextDark">#17333D</color>
+    <color name="colorTextMedium">#536B75</color>
+    <color name="colorTextLight">#7B9098</color>
+    <color name="colorOutline">#C7D5DA</color>
+    <color name="colorSuccess">#178A63</color>
+    <color name="colorWarning">#D98E1E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="ic_launcher_background">#0B5D6B</color>
+</resources>
